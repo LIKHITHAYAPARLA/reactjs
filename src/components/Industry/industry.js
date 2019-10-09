@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './industry.css';
 const industry=(props)=>{
     return(
         <div>

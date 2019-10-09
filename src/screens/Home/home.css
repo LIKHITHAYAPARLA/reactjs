@@ -1,0 +1,167 @@
+.App{
+    display: block;
+  }
+  .head {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 66px;
+    background-color: initial;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 110;
+  }
+  .logo{
+    top: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .menuinfo{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    font-weight: 400;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size:1.11111vw;
+  }
+  .ser{
+    min-height: 92.4vh;
+    padding-top: 50px;
+    width: 86.11111vw;
+    margin: 0 auto;
+    font-size: 2.43056vw;
+    color: #4a4a4a;
+    margin-bottom: 6.94444vw;
+    margin-top: 6.94444vw;
+   }
+  .icon{
+      display:flex;
+      width: 100%;
+      align-items: center;
+      justify-content:space-around;
+      flex-wrap: wrap;
+      text-align: center;
+      flex-direction: row;
+      margin-bottom:2.9999vw;
+      margin-top:2.9999vw;
+    }
+    .apr{
+        min-height: 92.4vh;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 86.11111vw;
+        margin: 0 auto;
+        font-size: 2.43056vw;
+        color: #4a4a4a;
+        margin-bottom: 0.94444vw;
+        margin-top: 6.94444vw;
+       }
+  .ol{
+    justify-content: center;
+    }
+  .test{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4.08333vw;
+      margin-bottom: 4.08333vw;
+     font-size: 2.11111vw;
+    }
+  .ts{
+    border-bottom: 2px solid red;
+    }
+   .te{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-bottom: 4.08333vw;
+    justify-content: center;
+  } 
+  .industryblock{
+  display: block;
+  margin-bottom: 6.94444vw;
+  margin-top: 6.94444vw;
+  }
+  .industryheading{
+  text-align: center;
+  font-size: 2.43056vw;
+  color: #4a4a4a;
+  }
+  .heading{
+    border-bottom: 2px solid red;
+  }
+  .si{
+    display:flex;
+    justify-content: space-around;
+  }
+  .indus{
+    display: flex;
+      align-items: flex-start;
+      margin-top: 100px;
+      justify-content: space-between;
+  }
+  .yh{
+    width:600px;
+  }
+  .indo{
+    display: block;
+    text-align: right;
+    margin-top: 6.94444vw;
+  }
+  .he{
+    font-size: 1.73611vw;
+    color: #4a4a4a;
+    letter-spacing: 2.31px;
+    text-align: right;
+    border-bottom: 2px solid red;
+  }
+  .horizontal{
+     width: 48.61111vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  .industrycomponents{
+    width: 48.61111vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  /* .container{
+    min-height:92.4vh;
+    width:86.11111vw;
+    margin:0 auto;
+  }
+  .servicecontainer{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.94444vw;
+    margin-top: 6.94444vw;
+    display: flex;
+  }
+  .serviceheading{
+    font-size: 2.43056vw;
+    color: #4a4a4a;
+  }
+  .serviceunderline{
+    border-bottom: 2px solid red;
+  }
+  .servicecontent{
+    font-size: 13px;
+    color:#4a4a4a;
+    letter-spacing: .09583vw;
+    margin-top: 2.08333vw;
+    width:39.44444vw;
+    line-height:1.5;
+  }
+  .serviceimage{
+    width:350px;
+  } */
+  
+  

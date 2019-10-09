@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './header.css';
 const headpart=(props)=>{
     return(
         <li className="part">{props.name}</li>

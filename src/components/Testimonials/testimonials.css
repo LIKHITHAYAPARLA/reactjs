@@ -1,0 +1,30 @@
+.container{
+    min-height:92.4vh;
+    width:86.11111vw;
+    margin:0 auto;
+  }
+  .servicecontainer{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.94444vw;
+    margin-top: 6.94444vw;
+    display: flex;
+  }
+  .serviceheading{
+    font-size: 2.43056vw;
+    color: #4a4a4a;
+  }
+  .serviceunderline{
+    border-bottom: 2px solid red;
+  }
+  .servicecontent{
+    font-size: 13px;
+    color:#4a4a4a;
+    letter-spacing: .09583vw;
+    margin-top: 2.08333vw;
+    width:39.44444vw;
+    line-height:1.5;
+  }
+  .serviceimage{
+    width:350px;
+  }

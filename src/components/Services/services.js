@@ -1,5 +1,5 @@
-    import React from 'react';
-import './App.css'; 
+import React from 'react';
+import './services.css'; 
 const services=(props)=>{
     return( 
         <div className="mainpart">

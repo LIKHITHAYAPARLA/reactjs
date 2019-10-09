@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './icons.css';
 const iconsview=(props)=>{
     return(
         <div className="icons">

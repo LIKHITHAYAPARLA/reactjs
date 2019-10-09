@@ -1,0 +1,12 @@
+.pict{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    width:14.5vw;
+    height:05.80556vw;
+    cursor:pointer;
+    border-bottom:.5px solid hsla(0,0%,59.2%,.5);
+    border-right:.5px solid hsla(0,0%,59.2%,.5);
+  } 

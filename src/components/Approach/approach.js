@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'; 
+import './approach.css'; 
 const aph=(props)=>{
     return( 
         <div className="mainpart">

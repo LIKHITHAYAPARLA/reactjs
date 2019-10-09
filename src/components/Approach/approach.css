@@ -1,0 +1,17 @@
+.uni{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom:2.9999vw;
+    margin-top:2.9999vw;
+    font-size:1.41111vw;
+  }
+  .hel{
+    width:600px;
+  }
+  .a{
+    font-size: 2.11111vw;
+   }
+   .ali{
+    border-bottom: 2px solid red;
+  }
