@@ -61,7 +61,7 @@
     display:flex;
     width: 100%;
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-around;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: row;
@@ -91,6 +91,7 @@
   flex-direction:row;
   flex-wrap:wrap;
   margin-bottom: 4.08333vw;
+  justify-content: center;
 } 
 .pict{
   display:flex;
@@ -230,8 +231,11 @@ color: #4a4a4a;
 }
 .si{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .yh{
   width:600px;
 }
+/* .icons{
+  justify-content:center;
+} */

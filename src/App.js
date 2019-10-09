@@ -135,12 +135,19 @@ class App extends Component {
         
         })
       }
+        </div>
        <div className="icon">{
         this.state.pics.map((ic)=>{
-          return(<Iconsview pic={ic.pic} name={ic.name}/>)
+          return(<Iconsview pic={ic.pic} />)
          })
         }
-         </div>
+        </div>
+         <div className="icon">{
+        this.state.pics.map((ic)=>{
+          return(<Iconsview name={ic.name} />)
+         })
+        }
+       
          </div>
 
         <div className="apr">{
