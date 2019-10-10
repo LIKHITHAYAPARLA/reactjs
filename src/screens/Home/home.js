@@ -1,3 +1,4 @@
+/* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
 import './home.css';
 import Aph from '../../components/Approach/approach';
@@ -42,6 +43,7 @@ import x from '../../assets/spring.png';
 import image from '../../assets/servicespic.png';
 import approach from '../../assets/approach.png';
 import industries from '../../assets/industries.png';
+
 class App extends Component {
   state={
     names:[
@@ -60,7 +62,7 @@ class App extends Component {
       {pic:app,name:'Application'},
       {pic:network,name:'Network'},
       {pic:crm,name:'CRM'},
-      {pic:dev,name:'devops'},                                                          
+      {pic:dev,name:'devops'},
     ],
     contents:[
       {con:'Ours Services',val:'We are in a unique position with experience in technology and business. Having delivered solutions and services across different domains, we use an innovative service model which is based on result driven partnerships.',url:image},
@@ -106,45 +108,52 @@ class App extends Component {
       {name:'Retail'},
     ]
   }
+
   render() {
+    const { industryparts = null } = this.state;
+    const {names=null}=this.state;
+    const {stack=null}=this.state;
+    const {appro=null}=this.state;
+    const {pics=null}=this.state;
+    const {contents=null}=this.state;
     return (
       <div className="App">
         <header className="head">
           <div className="logo">
-            <img src={mroads} width="144px" height="40px"/>
+                  <img src={mroads} width="144px" height="40px" alt="none"/>
           </div>
           <nav>
             <ul className="menuinfo">
               {
-                this.state.names.map((item,index)=>{
+                Array.isArray(names)?names.map((item)=>{
                   return(<Headpart name={item.name}/>)
-                })
+                }):null
               }
               </ul>
           </nav>
         </header>
       <div className="ser">{
-        this.state.contents.map((co)=>{
+       Array.isArray(contents)?contents.map((co)=>{
           return(<Services contents={co.con} name={co.val} img={co.url}/>)
-        })
+        }):null
       }
         </div>
        <div className="icon">{
-        this.state.pics.map((ic)=>{
+        Array.isArray(pics)?pics.map((ic)=>{
           return(<Iconsview pic={ic.pic} />)
-         })
+         }):null
         }
         </div>
          <div className="icon">{
-        this.state.pics.map((ic)=>{
+        Array.isArray(pics)?pics.map((ic)=>{
           return(<Iconsview name={ic.name} />)
-         })
+         }):null
         } 
         </div>
         <div className="apr">{
-        this.state.appro.map((ci)=>{
+        Array.isArray(appro)?appro.map((ci)=>{
           return(<Aph appro={ci.conte} names={ci.vals} imgs={ci.urls}/>)
-        })
+        }):null
       }
         </div>
           <div className="ol">
@@ -152,9 +161,9 @@ class App extends Component {
              <span className="ts">Tech Stack</span>
              </div>
          <div className="te">{
-            this.state.stack.map((ts)=>{
+            Array.isArray(stack)?stack.map((ts)=>{
            return(<Tech pics={ts.pict}/>)
-          })
+          }):null
          }
          </div>
          </div> 
@@ -165,7 +174,7 @@ class App extends Component {
            <div className="si">
            <div className="indus">
            <div className="industrypicture">
-             <img src={industries} className="yh"/>
+             <img src={industries} className="yh" alt="none"/>
            </div>
            </div>
            <div className="indo">
@@ -173,9 +182,9 @@ class App extends Component {
              <div className="horizontal">
       
              <div className="industrycomponents">{
-               this.state.industryparts.map((ind)=>{
+               Array.isArray(industryparts) ? industryparts.map((ind)=>{
                  return(<Industry name={ind.name}/>)
-               })
+               }) : null
              }
               </div>
              </div>

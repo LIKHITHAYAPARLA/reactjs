@@ -1,8 +1,9 @@
 import React from 'react';
 import './header.css';
-const headpart=(props)=>{
+
+const headpart=({name})=>{
     return(
-        <li className="part">{props.name}</li>
+        <li className="part">{name}</li>
     )
 }
 export default headpart;

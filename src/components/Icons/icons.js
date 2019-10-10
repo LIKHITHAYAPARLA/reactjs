@@ -1,10 +1,11 @@
 import React from 'react';
 import './icons.css';
-const iconsview=(props)=>{
+
+const iconsview=({pic,name})=>{
     return(
         <div className="icons">
-              <img src={props.pic}/>
-              <span className="tb">{props.name}</span>
+              <img src={pic} alt="none"/>
+              <span className="tb">{name}</span>
         </div>
       
     )

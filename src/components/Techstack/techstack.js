@@ -1,9 +1,10 @@
 import React from 'react';
 import './techstack.css';
-const tech=(props)=>{
+
+const tech=({pics})=>{
     return(
            <div className= "pict">
-                <img src={props.pics} width="50px" height="40px" />
+                <img src={pics} width="50px" height="40px" alt="none" />
             </div>
     )
 }

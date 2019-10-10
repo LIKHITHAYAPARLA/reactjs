@@ -1,9 +1,10 @@
 import React from 'react';
 import './industry.css';
-const industry=(props)=>{
+
+const industry=({name})=>{
     return(
         <div>
-    <div className="indi">{props.name}</div>
+    <div className="indi">{name}</div>
     </div>
     )
 }

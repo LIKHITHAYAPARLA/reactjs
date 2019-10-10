@@ -1,16 +1,17 @@
 import React from 'react';
 import './services.css'; 
-const services=(props)=>{
+
+const services=({img,contents,name})=>{
     return( 
         <div className="mainpart">
             <div className="fisrtpart">
             <div className="un">
                 <div className="imagepart">
-                    <img src={props.img} className="hel"/>
+                    <img src={img} className="hel" alt="none"/>
                 </div>
                 <div className="content" > 
-                <div className="a"><span className="ali">{props.contents}</span></div>
-                    <p>{props.name}.</p>
+                <div className="a"><span className="ali">{contents}</span></div>
+                    <p>{name}.</p>
                 </div>
             </div>
             </div>

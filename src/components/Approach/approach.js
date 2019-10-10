@@ -1,16 +1,17 @@
 import React from 'react';
 import './approach.css'; 
-const aph=(props)=>{
+
+const aph=({imgs,appro,names})=>{
     return( 
         <div className="mainpart">
             <div className="fisrtpart">
             <div className="uni">
                 <div className="imagepart">
-                    <img src={props.imgs} className="hel"/>
+                    <img src={imgs} className="hel" alt="none"/>
                 </div>
                 <div className="content" > 
-                <div className="a"><span className="ali">{props.appro}</span></div>
-                    <p>{props.names}.</p>
+                <div className="a"><span className="ali">{appro}</span></div>
+                    <p>{names}.</p>
                 </div>
             </div>
             </div>

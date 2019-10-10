@@ -2,7 +2,8 @@ import React from 'react';
 import './testimonials.css'; 
 import crm from '../../assets/crm.png';
 import testimonial from '../../assets/testi.png';
-const testi=(props)=>{
+
+const testi=()=>{
     return( 
         <div className="container">
            <div className="servicecontainer">
