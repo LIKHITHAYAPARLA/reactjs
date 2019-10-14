@@ -1,9 +1,9 @@
 import React from 'react';
-import './header.css';
+import classes from './header.module.css';
 
 const headpart=({name})=>{
     return(
-        <li className="part">{name}</li>
+        <li className={classes.part}>{name}</li>
     )
 }
 export default headpart;

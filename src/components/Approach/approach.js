@@ -1,16 +1,16 @@
 import React from 'react';
-import './approach.css'; 
+import classes from './approach.module.css'; 
 
 const aph=({imgs,appro,names})=>{
     return( 
-        <div className="mainpart">
-            <div className="fisrtpart">
-            <div className="uni">
-                <div className="imagepart">
-                    <img src={imgs} className="hel" alt="none"/>
+        <div className={classes.mainpart}>
+            <div className={classes.fisrtpart}>
+            <div className={classes.uni}>
+                <div className={classes.imagepart}>
+                    <img src={imgs} className={classes.hel} alt="none"/>
                 </div>
-                <div className="content" > 
-                <div className="a"><span className="ali">{appro}</span></div>
+                <div className={classes.content}> 
+                <div className={classes.a}><span className={classes.ali}>{appro}</span></div>
                     <p>{names}.</p>
                 </div>
             </div>

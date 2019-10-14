@@ -1,6 +1,6 @@
 /* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
-import './home.css';
+import classes from './home.module.css';
 import Aph from '../../components/Approach/approach';
 import Headpart from '../../components/Header/header';
 import Services from '../../components/Services/services';
@@ -117,13 +117,13 @@ class App extends Component {
     const {pics=null}=this.state;
     const {contents=null}=this.state;
     return (
-      <div className="App">
-        <header className="head">
-          <div className="logo">
+      <div className={classes.App}>
+        <header className={classes.head}>
+          <div className={classes.logo}>
                   <img src={mroads} width="144px" height="40px" alt="none"/>
           </div>
           <nav>
-            <ul className="menuinfo">
+            <ul className={classes.menuinfo}>
               {
                 Array.isArray(names)?names.map((item)=>{
                   return(<Headpart name={item.name}/>)
@@ -132,56 +132,56 @@ class App extends Component {
               </ul>
           </nav>
         </header>
-      <div className="ser">{
+      <div className={classes.ser}>{
        Array.isArray(contents)?contents.map((co)=>{
           return(<Services contents={co.con} name={co.val} img={co.url}/>)
         }):null
       }
         </div>
-       <div className="icon">{
+       <div className={classes.icon}>{
         Array.isArray(pics)?pics.map((ic)=>{
           return(<Iconsview pic={ic.pic} />)
          }):null
         }
         </div>
-         <div className="icon">{
+         <div className={classes.icon}>{
         Array.isArray(pics)?pics.map((ic)=>{
           return(<Iconsview name={ic.name} />)
          }):null
         } 
         </div>
-        <div className="apr">{
+        <div className={classes.apr}>{
         Array.isArray(appro)?appro.map((ci)=>{
           return(<Aph appro={ci.conte} names={ci.vals} imgs={ci.urls}/>)
         }):null
       }
         </div>
-          <div className="ol">
-            <div className="test">
-             <span className="ts">Tech Stack</span>
+          <div className={classes.ol}>
+            <div className={classes.test}>
+             <span className={classes.ts}>Tech Stack</span>
              </div>
-         <div className="te">{
+         <div className={classes.te}>{
             Array.isArray(stack)?stack.map((ts)=>{
            return(<Tech pics={ts.pict}/>)
           }):null
          }
          </div>
          </div> 
-          <div className="industryblock">
-           <div className="industryheading">
-             <span className="heading">Industries</span>
+          <div className={classes.industryblock}>
+           <div className={classes.industryheading}>
+             <span className={classes.heading}>Industries</span>
            </div>
-           <div className="si">
-           <div className="indus">
-           <div className="industrypicture">
-             <img src={industries} className="yh" alt="none"/>
+           <div className={classes.si}>
+           <div className={classes.indus}>
+           <div className={classes.industrypicture}>
+             <img src={industries} className={classes.yh} alt="none"/>
            </div>
            </div>
-           <div className="indo">
-           <span className="he">Horizontal Market</span>
-             <div className="horizontal">
+           <div className={classes.indo}>
+           <span className={classes.he}>Horizontal Market</span>
+             <div className={classes.horizontal}>
       
-             <div className="industrycomponents">{
+             <div className={classes.industrycomponents}>{
                Array.isArray(industryparts) ? industryparts.map((ind)=>{
                  return(<Industry name={ind.name}/>)
                }) : null

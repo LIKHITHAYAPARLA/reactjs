@@ -1,11 +1,11 @@
 import React from 'react';
-import './icons.css';
+import classes from './icons.module.css';
 
 const iconsview=({pic,name})=>{
     return(
-        <div className="icons">
-              <img src={pic} alt="none"/>
-              <span className="tb">{name}</span>
+        <div className={classes.icons}>
+              <img src={pic} alt=""/>
+              <span className={classes.tb}>{name}</span>
         </div>
       
     )

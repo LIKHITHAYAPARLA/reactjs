@@ -1,9 +1,9 @@
 import React from 'react';
-import './techstack.css';
+import classes from './techstack.module.css';
 
 const tech=({pics})=>{
     return(
-           <div className= "pict">
+           <div className= {classes.pict}>
                 <img src={pics} width="50px" height="40px" alt="none" />
             </div>
     )
